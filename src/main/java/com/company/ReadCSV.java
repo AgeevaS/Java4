@@ -21,8 +21,7 @@ public class ReadCSV {
         HashMap<String, Division> divisions = new HashMap<>();
 
         try (InputStream in = getClass().getResourceAsStream(csvFilePatch);
-             CSVReader reader = in == null ? null : new CSVReaderBuilder(new InputStreamReader(in))
-                     .withCSVParser(new CSVParserBuilder().withSeparator(separator).build()).build()) {
+             CSVReader reader = in == null ? null : new CSVReaderBuilder(new InputStreamReader(in)).withCSVParser(new CSVParserBuilder().withSeparator(separator).build()).build()) {
             if (reader == null) {
                 throw new FileNotFoundException(csvFilePatch);
             }
