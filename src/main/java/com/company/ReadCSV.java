@@ -1,18 +1,17 @@
 package com.company;
-
-import com.opencsv.CSVParserBuilder;
-import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvValidationException;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.HashMap;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class ReadCSV {
     public LinkedList<Human> readCSVFile(String csvFilePatch, char separator) {
